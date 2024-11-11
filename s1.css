@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aqua;
+}
+.hero h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+.hero h1 span{
+    color: #ff2926;
+}
+textarea{
+    width: 600px;
+    height:250px;
+    background: #403d84;
+    color: rgb(254, 254, 254);
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+textarea::placeholder{
+font-size: larger;
+color: aliceblue;
+}
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    background: #ff2963;
+    color:#fff;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+}
+button img{
+    width: 16px;
+    margin-right: 10px;
+}
+select{
+    flex: 1;
+    color: #fff;
+    background: #403d84;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    height: 50px;
+    border-radius: 35px;
+    appearance: none;
+    padding: 0 20px;
+    background-image: url(dropdown.png);
+    background-position-x:calc(100% - 20px) ;
+    background-position-y:20px ;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 30px; /* Decrease font size for mobile */
+        margin-top: -20px; /* Adjust margin for better alignment */
+        margin-bottom: 20px; /* Reduce bottom margin */
+    }
+
+    textarea {
+        width: 90%; /* Use percentage width for responsiveness */
+        height: 200px; /* Adjust height */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .row {
+        flex-direction: column; /* Stack items vertically */
+        width: 90%; /* Use percentage width */
+    }
+
+    button {
+        width: 100%; /* Make buttons full width */
+        padding: 10px; /* Adjust padding */
+        font-size: 14px; /* Decrease font size */
+    }
+
+    select {
+        width: 100%; /* Make select element full width */
+        height: 45px; /* Adjust height */
+        padding: 0 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px; /* Further decrease font size */
+        margin-top: 0; /* Remove negative margin */
+        margin-bottom: 15px; /* Further reduce bottom margin */
+    }
+
+    textarea {
+        width: 95%; /* Use nearly full width */
+        height: 150px; /* Adjust height for smaller screens */
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .row {
+        flex-direction: column; /* Keep items stacked */
+        width: 95%; /* Use nearly full width */
+    }
+
+    button {
+        width: 100%; /* Ensure full width */
+        padding: 8px; /* Adjust padding */
+        font-size: 12px; /* Decrease font size */
+    }
+
+    select {
+        width: 100%; /* Ensure full width */
+        height: 40px; /* Adjust height */
+        padding: 0 10px; /* Adjust padding */
+    }
+}
